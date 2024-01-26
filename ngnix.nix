@@ -5,12 +5,12 @@
 
   services.nginx.enable = true;
   services.nginx.virtualHosts."prairiedog-mercat.ts.net" = {
+    enableACME = true;
     locations."/" = {
-      root = "~/GitHub/KyniHomePage/index.html";
+      root = "/home/cpb/GitHub/KyniHomePage";
     };
   };
 
-  services.nginx.virtualHosts."prairiedog-mercat.ts.net".enableACME = true;
-
+  security.acme.acceptTerms = true;
   # ...
 }
