@@ -14,7 +14,8 @@
       ./neovim.nix
       ./virtual.nix
       #./nur.nix
-      ./nvidia.nix
+      ./ngnix.nix 
+      ./nvidia.nix 
       ./steam.nix
       ./vaapi.nix
       #./vpn.nix 
@@ -147,7 +148,7 @@
   # Open ports in the firewall.
   networking.firewall = {
     enable = true;
-    allowedTCPPorts = [ 22 80 ];
+    allowedTCPPorts = [ 22 80 443 ];
     allowedUDPPorts = [ 3389 22 80 ];
   };
 
