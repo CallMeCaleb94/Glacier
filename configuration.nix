@@ -14,7 +14,7 @@
       ./neovim.nix
       ./virtual.nix
       #./nur.nix
-      ./ngnix.nix 
+      #./ngnix.nix 
       ./nvidia.nix 
       ./steam.nix
       ./vaapi.nix
@@ -108,6 +108,7 @@
       runelite
       cool-retro-term 
       wine
+      valent
       vscode-fhs
       ];
       shell = "${pkgs.fish}/bin/fish";

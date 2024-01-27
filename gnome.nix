@@ -45,6 +45,7 @@ environment.systemPackages = with pkgs; [
 	#gnomeExtensions.paperwm
 	gnomeExtensions.just-perfection
 	gnomeExtensions.tailscale-qs
+	gnomeExtensions.valent
 	gnomeExtensions.vitals
 ];
 
