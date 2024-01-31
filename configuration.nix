@@ -7,18 +7,16 @@
 {
   imports =
     [ 
-      ./arr.nix
+      #./arr.nix
       ./hardware-configuration.nix
       ./gnome.nix
       ./jellyfin.nix
       ./neovim.nix
       ./virtual.nix
-      #./nur.nix
-      #./ngnix.nix 
+      #./nur.nix 
       ./nvidia.nix 
       ./steam.nix
-      ./vaapi.nix
-      #./vpn.nix 
+      ./vaapi.nix 
     ];
 
   # Bootloader.
