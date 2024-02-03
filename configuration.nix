@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, nixpkgs, home-manager, ... }:
+{ config, pkgs, nixpkgs, ... }:
 
 {
   imports =
@@ -14,6 +14,7 @@
       ./neovim.nix
       ./virtual.nix
       #./nur.nix 
+      ./nginx.nix
       ./nvidia.nix 
       ./steam.nix
       ./vaapi.nix 
@@ -74,13 +75,7 @@
     enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
+    pulse.enable = true; 
   };
 
 
@@ -154,7 +149,7 @@
   # AutoUpgrade
   system.autoUpgrade = {
     enable = true;
-    channel = "https://nixos.org/channels/nixos-23.11";
+    channel = "https://nixos.org/channels/nixos-unstable";
   };
 
   nix = {

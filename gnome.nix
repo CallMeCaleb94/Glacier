@@ -7,7 +7,7 @@ environment.gnome.excludePackages = with pkgs.gnome; [
 	cheese 
 	eog 
 	epiphany
-	gedit
+	pkgs.gedit
 	simple-scan
 	#totem
 	yelp
