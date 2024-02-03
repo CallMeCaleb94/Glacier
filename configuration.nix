@@ -15,7 +15,7 @@
       ./virtual.nix
       #./nur.nix 
       ./nginx.nix
-      ./nvidia.nix 
+      #./nvidia.nix 
       ./steam.nix
       ./vaapi.nix 
     ];
